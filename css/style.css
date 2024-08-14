@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: darkgray;
+}
+#screen{
+    color: white;
+    font-size: 20px;
+    background-color: grey;
+    height: 60px;
+    width: 100%;
+    border-radius: 10px;
+}
+.btns{
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    row-gap: 40px;
+    column-gap: 22px;
+}
+button{
+    border-radius: 50%;
+    font-size: 28px;
+    padding: 20px;
+}
+#equlBtn{
+    padding: 8px 190px;
+    font-size: 28px;
+    background-color: green;
+}
