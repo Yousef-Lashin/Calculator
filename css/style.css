@@ -13,10 +13,7 @@ body{
     border-radius: 10px;
 }
 .btns{
-    display: grid;
-    grid-template-columns: 80px 80px 80px 80px;
-    row-gap: 40px;
-    column-gap: 22px;
+    row-gap: 10px;
 }
 button{
     border-radius: 50%;
@@ -24,7 +21,7 @@ button{
     padding: 20px;
 }
 #equlBtn{
-    padding: 8px 190px;
+    width: 100%;
     font-size: 28px;
     background-color: green;
 }
