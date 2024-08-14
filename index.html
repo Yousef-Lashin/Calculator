@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator JS</title>
+
+</head>
+<body>
+    <div class="bg-black shadow rounded-3 w-25 container container-sm m-auto mt-5 p-5">
+        <input type="text" class="px-3" id="screen" disabled>
+        <div class="btns mt-4 row">
+            <div class="row-cols-5 d-flex">
+                <button onclick="appendNumber('7')" class="button-option border-0 flex-grow-1 m-2">7</button>
+                <button onclick="appendNumber('8')" class="button-option border-0 flex-grow-1 m-2">8</button>
+                <button onclick="appendNumber('9')" class="button-option border-0 flex-grow-1 m-2">9</button>
+                <button class="btn btn-warning rounded-circle border-0 operator flex-grow-1 m-2" onclick="setOperation('+')">➕</button>
+            </div>
+
+            <div class="row-cols-5 d-flex">
+                <button onclick="appendNumber('4')" class="button-option border-0 flex-grow-1 m-2">4</button>
+                <button onclick="appendNumber('5')" class="button-option border-0 flex-grow-1 m-2">5</button>
+                <button onclick="appendNumber('6')" class="button-option border-0 flex-grow-1 m-2">6</button>
+                <button class="btn btn-warning rounded-circle border-0 operator flex-grow-1 m-2" onclick="setOperation('-')">➖</button>
+            </div>
+
+            <div class="row-cols-5 d-flex">
+                <button onclick="appendNumber('1')" class="button-option border-0 flex-grow-1 m-2">1</button>
+                <button onclick="appendNumber('2')" class="button-option border-0 flex-grow-1 m-2">2</button>
+                <button onclick="appendNumber('3')" class="button-option border-0 flex-grow-1 m-2">3</button>
+                <button class="btn btn-warning rounded-circle border-0 operator flex-grow-1 m-2" onclick="setOperation('*')">✖️</button>
+            </div>
+
+            <div class="row-cols-5 d-flex">
+                <button class="clear bg-danger text-light border-0 flex-grow-1 m-2" onclick="clearDisplay()">C</button>
+                <button onclick="appendNumber('0')" class="button-option border-0 flex-grow-1 m-2">0</button>
+                <button onclick="appendNumber('.')" class="button-option border-0 flex-grow-1 m-2">.</button>
+                <button class="btn btn-warning rounded-circle border-0 operator flex-grow-1 m-2" onclick="setOperation('/')">/</button>
+            </div>
+
+            <div class="row-cols-4 d-flex">
+                <button class="btn fw-bold text-light border-0 equal flex-grow-1" id="equlBtn" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+
+<script src="JS/workshop.js"></script>
+</body>
+</html>
